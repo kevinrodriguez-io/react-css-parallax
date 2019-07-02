@@ -15,12 +15,13 @@ npm install --save react-css-parallax
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-css-parallax'
+import Parallax from 'react-css-parallax'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Parallax src="https://kevinrodriguez.io/kevinbackground.jpg" alt="A nice keyboard" height="100vh" />
+      <Parallax src="https://kevinrodriguez.io/kevinbackground.jpg" alt="A nice keyboard" height="100vh" fixed {/*Disables the parallax effect*/} />
     )
   }
 }
