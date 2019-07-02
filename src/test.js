@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import Parallax from './'
 
-describe('ExampleComponent', () => {
+describe('Parallax', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Parallax).toBeTruthy()
   })
 })
