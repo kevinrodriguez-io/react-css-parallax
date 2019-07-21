@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './parallax.css'
-
 /**
  * @typedef ParallaxProps
  * @property {React.ReactNode} [children] - Children elements
@@ -17,14 +15,17 @@ import styles from './parallax.css'
  * @param {ParallaxProps} props - Container properties
  */
 const Parallax = ({ children, src, height, alt, fixed }) => {
-  const elementStyle = {
+  const containerStyles = {
+    position: 'relative',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: fixed ? 'scroll' : 'fixed',
     backgroundImage: `url(${src})`,
     minHeight: height
   }
   return (
-    <div
-      style={elementStyle}
-      className={`${styles.parallax} ${fixed && styles.fixed}`}>
+    <div style={containerStyles}>
       <img {...{ src, alt }} style={{display: 'none'}} />
       { children }
     </div>
