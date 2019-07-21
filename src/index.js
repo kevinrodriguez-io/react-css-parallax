@@ -14,7 +14,7 @@ import PropTypes from 'prop-types'
  * Creates a parallax container
  * @param {ParallaxProps} props - Container properties
  */
-const Parallax = ({ children, src, height, alt, fixed }) => {
+const Parallax = ({ children, src, height, alt, fixed, ...passProps }) => {
   const containerStyles = {
     position: 'relative',
     backgroundPosition: 'center',
@@ -25,8 +25,8 @@ const Parallax = ({ children, src, height, alt, fixed }) => {
     minHeight: height
   }
   return (
-    <div style={containerStyles}>
-      <img {...{ src, alt }} style={{display: 'none'}} />
+    <div style={containerStyles} {...passProps}>
+      {alt && (<img {...{ src, alt }} style={{display: 'none'}} />) }
       { children }
     </div>
   )
