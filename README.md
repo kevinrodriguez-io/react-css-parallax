@@ -4,6 +4,9 @@
 
 [![NPM](https://img.shields.io/npm/v/react-css-parallax.svg)](https://www.npmjs.com/package/react-css-parallax) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Demo
+https://kevinrodriguez-io.github.io/react-css-parallax
+
 ## Install
 
 ```bash
