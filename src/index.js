@@ -39,4 +39,10 @@ Parallax.propTypes = {
   fixed: PropTypes.bool
 }
 
+Parallax.defaultProps = {
+  height: '100vh',
+  alt: 'Parallax Image',
+  fixed: false
+}
+
 export default Parallax
