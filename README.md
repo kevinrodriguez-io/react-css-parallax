@@ -12,6 +12,13 @@ https://kevinrodriguez-io.github.io/react-css-parallax
 ```bash
 npm install --save react-css-parallax
 ```
+## Features
+
+- [x] Relies on `backgroundAttachment`
+- [x] Supports `fixed` to disable the parallax effect
+- [x] Simple, customizable api
+- [x] Adds underlying, hidden img tag when alt is present
+- [x] Supports passProps
 
 ## Usage
 
