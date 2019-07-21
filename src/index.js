@@ -11,7 +11,8 @@ import PropTypes from 'prop-types'
  */
 
 /**
- * Creates a parallax container
+ * Creates a parallax container, if alt is present it also
+ * creates an img tag with the given src and alt for screen readers.
  * @param {ParallaxProps} props - Container properties
  */
 const Parallax = ({ children, src, height, alt, fixed, ...passProps }) => {
